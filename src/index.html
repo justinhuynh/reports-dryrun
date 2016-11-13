@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Reporting</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>ID</td>
+        <th>Link</td>
+      </tr>
+      <? for (var i = 0; i < files.length; i ++) { ?>
+        <tr>
+          <td>
+            <?= files[i].getId(); ?>
+          </td>
+          <td>
+            <a href="<?= files[i].getUrl() ?>"><?= files[i].getUrl(); ?></a>
+          </td>
+        </tr>
+      <? } ?>
+    </table>
+  </body>
+</html>
